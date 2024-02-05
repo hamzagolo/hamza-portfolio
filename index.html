@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/df36ba4d98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+<div class="container">
+  <nav>
+    <img src="./logo.jpg" alt="hamza photo" class="logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+       
+      </li>
+    </ul>
+  </nav>
+  <div class="header-text">
+
+<p>Website Developer</p>
+<h1>
+  Hi, I am Hamza <span class="Golo"> <br>Golo</span>
+
+</h1>
+</div>
+</div>
+ </div>
+
+ <div>
+  <div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="./hamzagolo.jpg" alt="">
+      </div>     
+       <div class="about-col-2">
+        <h1 class="about-me">About Me</h1>
+        <p class="paragraph1">
+          Highly motivated Junior Web Developer with experience in building and maintaining web applications. Proficient in HTML, CSS, JavaScript, Seeking to join a dynamic team where I can utilize my skills to help drive the success of the organization.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links"onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+         <ul>
+          <li>Web Development</li>
+          <li>Web Designing</li>
+         </ul>
+        </div>
+
+         <div class="tab-contents" id="Experience">
+          <ul>
+           <li>Build organic chicken web</li>
+           <li> Build tindog</li>
+           <li>Build this Portfolio</li>
+          </ul>
+         </div> 
+         <div class="tab-contents" id="Education">
+          <ul>
+           <li> 2024/2/25 Udemy Graduate</li>
+           <li> 2023/10/12 Archive Collage</li>
+          </ul>
+         </div>  
+      </div>
+      </div>
+  </div>
+ </div>
+<!-----------------------------services--------------------------------->
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-display-code"></i>
+        <h2>Web Developer</h2>
+        <p>I have experience in developing websites and I am good at using any design software. I think I would be a good fit for for joining any company because I have the necessary skills and experience.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-laptop-mobile"></i>
+        <h2>Web Design</h2>
+        <p>I have experience in Designing websites and I am good at using design software. I think I would be a good fit for for joining any company because I have the necessary skills and experience.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+
+
+    </div>
+  </div>
+ </div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links")
+var tabcontents = document.getElementsByClassName("tab-contents")
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+  
+</body>
+</html>
